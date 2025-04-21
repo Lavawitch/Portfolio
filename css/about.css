@@ -1,0 +1,111 @@
+/* 关于我界面 */
+.about-section {
+  margin: 0 57px 4rem 57px;
+}
+
+.about-section h3 {
+  padding-top: 4rem;
+}
+
+.about-body {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-top: 1.5rem;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-img {
+  padding: 5rem 0;
+  width: 20rem;
+}
+/* 联系我界面 */
+.contact-form {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin: 3rem 57px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form-actions {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.site-map table {
+  margin: 0 57px;
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-dark);
+}
+
+th {
+  background: rgba(0, 0, 0, 0.03);
+  font-weight: 600;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .input-group {
+    grid-template-columns: 1fr;
+  }
+
+  .site-map table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,28 @@
+.service-part h3 {
+  font-size: 25px;
+  padding: 0 0 2rem 0;
+}
+
+.service-part {
+  max-width: 100%;
+  margin: 0 57px;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.service-part p {
+  padding: 0 0 1rem 0;
+  font-size: 18px;
+}
+
+.highlight {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.service-link {
+  font-weight: bolder;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: var(--link-color);
+}

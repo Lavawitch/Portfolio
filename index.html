@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Lovawitch's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/svg.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="/js/script.js" defer></script>
+    <script src="/js/portfolio.js" defer></script>
+    <script src="/js/animation.js" defer></script>
+    <script src="/js/service.js" defer></script>
+    <script src="/js/contact.js" defer></script>
+</head>
+
+<body>
+    <!-- 固定导航栏 -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <button class="menu-toggle">
+                <i class="fas fa-bars menu-icon"></i>
+                <i class="fas fa-times close-icon"></i>
+            </button>
+            <div class="logo">
+                Tuddler with ink
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#about" class="nav-link">关于我</a>
+                <a href="#portfolio" class="nav-link">作品集</a>
+                <a href="#services" class="nav-link">设计服务</a>
+                <a href="#blog" class="nav-link">设计博客</a>
+                <a href="#contact" class="nav-link">联系我</a>
+            </div>
+
+            <!-- 主题切换按钮 -->
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </span>
+            </label>
+
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <div class="container">
+        <!-- 首页内容 -->
+        <section id="home" class="page-content active">
+            <div class="hero">
+                <h1>Lovawitch's personal portfolio exhibition</h1>
+                <p>Simple creativity, thought into action, discovering the beauty of life and the abstract world.</p>
+                <a href="#homeShow" class="cta-button">下滑以查看精选作品展示 ∇</a>
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>匠心独运</h3>
+                    <p>几何图形的巧妙组合，色彩的精心搭配，展现出非凡的设计思维。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>妙趣横生</h3>
+                    <p>从可爱的卡通形象到生动的场景设计，让人感受到轻松愉快的氛围。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>简约而不简单</h3>
+                    <p>以简洁的线条和形式呈现，但细节之处却暗藏巧思，既有视觉的美感，又不失功能性和深度。</p>
+                </div>
+            </div>
+            <section id="homeShow" class="mainShow">
+                <h1 class="mainShow-title">精选作品</h1>
+                <hr class="portfolio-divider">
+                <div class="image-showcase">
+                    <div class="showcase-item">
+                        <svg viewBox="0 0 600 600">
+                            <g class="home_venus_forearm">
+                                <image class="star" width="600" height="600" href="/svg/logo6_div3.svg" />
+                                <image width="600" height="600" href="/svg/home_1.svg" />
+                                <image class="ball" width="600" height="600" href="/svg/home_2.svg" />
+                                <image class="ball" width="600" height="600" href="/svg/home_3.svg" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <!-- 主页页脚 -->
+            <footer class="main-footer">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Lovawitch's Studio</h4>
+                        <p>将创意转化为数字体验</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>联系我</h4>
+                        <p>Email: contact@ 3037665528@qq.com</p>
+                        <p>WeChat: lovawitch</p>
+                    </div>
+                    <div class="footer-social">
+                        <a target="_blank" href="https://github.com/Lavawitch" class="social-icon"><i
+                                class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://qm.qq.com/q/piXMKkLkoo" class="social-icon"><i
+                                class="fab fa-qq"></i></a>
+                        <a target="_blank" href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Lovawitch. All rights reserved.</p>
+                </div>
+            </footer>
+        </section>
+        <!-- 关于我内容 -->
+        <section id="about" class="page-content">
+            <!-- <div class="vague"
+                style="width: 800;height: 600px;background-color: var(--primary-color);border-radius: 23% 49% 20% 65%;">
+            </div> -->
+            <h2>ABOUT ME</h2>
+            <!-- 文字内容介绍 -->
+            <div class="about-container">
+                <div class="about-section">
+                    <h3>「界面诗人 × 负空间布道者」</h3>
+                    <p class="about-body">
+                        我是Lovawitch，目前是一名计算机专业大二的学生，对设计颇有兴趣，希望能制作美观、简洁的，令人赏心悦目又有所用处的页面，谢谢！<br><br>
+                        目前仍在探索计算机相关的知识，暂无确定的方向，是一朵自由的创意云彩：），
+                        擅长用独特设计方法，如自己稀奇古怪的想法实现页面内容，也会参考他人的精美界面，从中学习专业性的框架构建，
+                        由此一步步搭成自己的“破屋子”。
+                        <br><br>对设计的兴趣起源于高中，在略显枯燥的学习生活中，用电脑绘制一个个抽象的人物，制作活泼可爱的动画，那时还是128×128px的画板，用鼠标绘制像素小人，已是乐趣无穷！
+                        <br><br>我的职业生涯还未开始，不过随遇而安。
+                    </p>
+                </div>
+                <div>
+                    <img class="about-img" src="/imgs/atar.jpg" alt="头像">
+                </div>
+            </div>
+            <!-- <div class="site-map">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lovawitch</th>
+                            <th>资源</th>
+                            <th>博客</th>
+                            <th>社区</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3"></td>
+                            <td>文档</td>
+                            <td>设计作品</td>
+                            <td>帮助</td>
+                        </tr>
+                        <tr>
+                            <td>最近的文章</td>
+                            <td>常用插件</td>
+                            <td>产品更新</td>
+                        </tr>
+                        <tr>
+                            <td>Page</td>
+                            <td>Page</td>
+                            <td>Page</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> -->
+        </section>
+        <!-- 作品集内容 -->
+        <section id="portfolio" class="page-content">
+            <h2>作品集</h2>
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="grid">
+                    <i class="fas fa-th-large"></i>
+                    网格视图
+                </button>
+                <button class="view-btn" data-view="timeline">
+                    <i class="fas fa-stream"></i>
+                    时间轴
+                </button>
+            </div>
+            <div class="portfolio-gallery">
+                <!-- 筛选器 -->
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="logo">LOGO设计</button>
+                    <button class="filter-btn" data-filter="post">海报设计</button>
+                    <button class="filter-btn" data-filter="animation">动画制作</button>
+                    <button class="filter-btn" data-filter="others">其他</button>
+                </div>
+                <!-- 没有下拉功能记得删掉toggle -->
+                <!-- 层次设计作品 -->
+                <article class="portfolio-item" data-tags="others" data-date="2023-03" data-duration="4hours">
+                    <section class="scroll-container">
+                        <div class="portfolio-header" onclick="toggleDetails(this)">
+                            <h3>HIERARCHICAL DESIGN 层次设计</h3>
+                            <span class="tool-tag">PS(Photoshop)</span>
+                        </div>
+                        <hr class="portfolio-divider">
+                        <div class="portfolio-stack">
+                            <!-- 作品1 -->
+                            <article class="portfolio-card active">
+                                <!-- 动态详情层 (滚动触发显示) -->
+                                <div class="card-details" style="width: 350px;height: 100px; ">
+                                    <p class="detail-description">采用纸艺剪纸风格设计，具有强烈的层次感和立体感，整体呈现出一种梦幻般的氛围。</p>
+                                    <div class="detail-meta">
+                                        <span class="tool-tag">Photoshop</span>
+                                        <time class="time-tag">2023-03</time>
+                                    </div>
+                                </div>
+                                <!-- 主视觉层 -->
+                                <svg viewBox="0 0 1020 600" class="svg-img">
+                                    <g class="venus_forearm">
+                                        <image width="1020" height="600" href="/imgs/ps_work_bg.png" />
+                                        <image class="balloon" width="1020" height="600"
+                                            href="/svg/ps_word_balloon.svg" />
+                                        <image width="1020" height="600" href="/svg/ps_word_bird.png" />
+                                        <image class="flower" width="1020" height="570"
+                                            href="/svg/ps_word_flower.svg" />
+                                    </g>
+                                </svg>
+
+                            </article>
+                        </div>
+                    </section>
+                </article>
+                <!-- 海报设计作品 -->
+                <article class="portfolio-item" data-tags="post" data-date="2023-04" data-duration="2hours">
+                    <section class="scroll-container">
+                        <div class="portfolio-header" onclick="toggleDetails(this)">
+                            <h3>POSTS COLLECTIONS 海报设计集合</h3>
+                            <span class="tool-tag">PS(Photoshop)</span>
+                        </div>
+                        <hr class="portfolio-divider">
+                        <div class="portfolio-stack">
+                            <!-- 作品1 -->
+                            <article class="portfolio-card next">
+                                <!-- 主视觉层 -->
+                                <div class="poker poker1">
+                                    <img src="/imgs/ps_post1.jpg" alt="PS设计项目" />
+                                </div>
+                                <div class="poker poker2">
+                                    <img src="/imgs/ps_post2.jpg" alt="PS设计项目" />
+                                </div>
+                                <div class="poker poker3">
+                                    <img src="/imgs/ps_post4.jpg" alt="PS设计项目" />
+                                </div>
+                                <div class="poker poker4">
+                                    <img src="/imgs/ps_post3.jpg" alt="PS设计项目" />
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </article>
+                <!-- 毛绒渐变设计作品 -->
+                <article class="portfolio-item" data-tags="others" data-date="2023-12" data-duration="2hours">
+                    <section class="scroll-container">
+                        <div class="portfolio-header" onclick="toggleDetails(this)">
+                            <h3>FUZZY GRADIENT 毛绒渐变 特色设计</h3>
+                            <span class="tool-tag">AI(Adobe Illustrator)</span>
+                        </div>
+                        <hr class="portfolio-divider">
+                        <div class="portfolio-stack">
+                            <!-- 作品1 -->
+                            <article class="portfolio-card next">
+                                <!-- 主视觉层： -->
+                                <img src="/imgs/logo_2023.jpg" alt="logo">
+                                <!-- 动态详情层 (滚动触发显示) -->
+                                <div class="card-details">
+                                    <p class="detail-description">
+                                        以“2023”数字为主体，采用毛绒质感的渐变设计，蓝紫色过渡到橙黄色，充满梦幻感。整体风格现代且富有层次感，视觉上温暖而动感。
+                                    </p>
+                                    <div class="detail-meta">
+                                        <span class="tool-tag">AI</span>
+                                        <time class="time-tag">2023-12</time>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </article>
+                <!-- LOGO设计作品 -->
+                <article class="portfolio-item" data-tags="logo" data-date="2024-01" data-duration="2hours">
+                    <section class="scroll-container">
+                        <div class="portfolio-header" onclick="toggleDetails(this)">
+                            <h3>LOGO 图标设计</h3>
+                            <span class="tool-tag">AI(Adobe Illustrator)</span>
+                        </div>
+                        <hr class="portfolio-divider">
+                        <div class="portfolio-stack">
+                            <!-- 作品1 -->
+                            <article class="portfolio-card next">
+                                <div class="icon-grid">
+                                    <div class="icon-container">
+                                        <svg>
+                                            <g>
+                                                <image class="ai-logo1" href="/svg/logo1_div1.svg" />
+                                                <image href="/svg/logo1_div2.svg" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg>
+                                            <g>
+                                                <image href="/svg/logo2_div1.svg" />
+                                                <image href="/svg/logo2_div2.svg" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg>
+                                            <g>
+                                                <image href="/svg/logo3_div2.svg" />
+                                                <image href="/svg/logo3_div3.svg" />
+                                                <image href="/svg/logo3_div1.svg" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg>
+                                            <g>
+                                                <image href="/svg/logo4_div1.svg" />
+                                                <image href="/svg/logo4_div2.svg" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg>
+                                            <g>
+                                                <image href="/svg/logo5_div1.svg" />
+                                                <image href="/svg/logo5_div2.svg" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg>
+                                            <g>
+                                                <image width="150px" height="150px" href="/svg/logo6_div2-01.png" />
+                                                <image href="/svg/logo6_div2.svg" />
+                                                <image href="/svg/logo6_div3.svg" />
+                                                <image href="/svg/logo6_div4.svg" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg>
+                                            <g>
+                                                <image href="/svg/logo7_div2.svg" />
+                                                <image width="150px" height="150px" href="/svg/logo7_div4-01.png" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg>
+                                            <g>
+                                                <image href="/svg/logo8_div1.svg" />
+                                                <image href="/svg/logo8_div2.svg" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="icon-container">
+                                        <svg>
+                                            <g>
+
+                                                <image width="150px" height="150px" href="/svg/logo9_div1-01.png" />
+                                                <image href="/svg/logo9_div1.svg" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!-- 动态详情层 (滚动触发显示) -->
+                                <div class="card-details">
+                                    <br>
+                                    <p class="detail-description">简单的文字设计，配合图形，既能满足标识，又美观大气</p>
+                                    <br><br>
+                                    <p class="detail-description">采用黄金分割比构建多个多边形和圆形，取不同比例不同部分构成美观的图形</p>
+                                    <br><br>
+                                    <p class="detail-description">简洁的配色和适当的阴影，模拟立体效果</p>
+                                    <div class="detail-meta">
+                                        <span class="tool-tag">AI</span>
+                                        <time class="time-tag">2024-07</time>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </article>
+                <!-- 动画设计作品1 -->
+                <article class="portfolio-item" data-tags="animation" data-date="2025-01">
+                    <section class="scroll-container">
+                        <div class="portfolio-header">
+                            <h3>ANIMATION 动态视觉视频作品</h3>
+                            <span class="tool-tag">Blender</span>
+                        </div>
+                        <div class="video-container">
+                            <!-- 视频元素 -->
+                            <video class="portfolio-video" controls preload="metadata">
+                                <source src="/videos/0001-0170_20250417_17121682.mp4" type="video/mp4">
+                            </video>
+                            <!-- 故障效果封面 -->
+                            <div class="glitch-cover">
+                                <div class="glitch-text" data-text="GLITCH EFFECT">GLITCH EFFECT</div>
+                                <div class="play-icon"><i class="fas fa-play"></i></div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <!-- 动画设计作品2 -->
+                <article class="portfolio-item" data-tags="animation" data-date="2025-01">
+                    <section class="scroll-container">
+                        <div class="portfolio-header">
+                            <h3>ANIMATION 动画作品</h3>
+                            <span class="tool-tag">Blender</span>
+                        </div>
+                        <div class="video-container">
+                            <!-- 视频元素 -->
+                            <video class="portfolio-video" controls preload="metadata">
+                                <source src="/videos/0001-0170.mp4" type="video/mp4">
+                            </video>
+                            <!-- 故障效果封面 -->
+                            <div class="glitch-cover">
+                                <div class="glitch-text" data-text="GLITCH EFFECT">GLITCH EFFECT</div>
+                                <div class="play-icon"><i class="fas fa-play"></i></div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <!-- 到底啦!!! -->
+                <article class="portfolio-item" data-tags="others post logo 3d animation" data-date="none">
+                    <section class="scroll-container fo_back_to_top">
+                        <div class="portfolio-header">
+                            <h3>到底啦！点击回到顶部</h3>
+                            <span class="tool-tag">Get back to the top</span>
+                        </div>
+                        <hr class="portfolio-divider">
+                    </section>
+                </article>
+            </div>
+            <div class="portfolio-time-gallery">
+                <!-- 时间轴视图 -->
+                <div class="timeline-view">
+                    <section class="timeline-container">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>HIERARCHICAL DESIGN 层次设计</h3>
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2023-03</span>
+                                    <span class="timeline-tool">PS(Photoshop)</span>
+                                </div>
+                                <div class="timeline-description">
+                                    <p>采用纸艺剪纸风格设计，具有强烈的层次感和立体感，整体呈现出一种梦幻般的氛围。</p>
+                                </div>
+                                <div class="timeline-tags">
+                                    <span class="tag">others</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>POSTS COLLECTIONS 海报设计集合</h3>
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2023-04</span>
+                                    <span class="timeline-tool">PS(Photoshop)</span>
+                                </div>
+                                <div class="timeline-tags">
+                                    <span class="tag">post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>FUZZY GRADIENT 毛绒渐变 特色设计</h3>
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2023-12</span>
+                                    <span class="timeline-tool">AI(Adobe Illustrator)</span>
+                                </div>
+                                <div class="timeline-description">
+                                    <p>以“2023”数字为主体，采用毛绒质感的渐变设计，蓝紫色过渡到橙黄色，充满梦幻感。整体风格现代且富有层次感，视觉上温暖而动感。</p>
+                                </div>
+                                <div class="timeline-tags">
+                                    <span class="tag">others</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>LOGO 图标设计</h3>
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2024-01</span>
+                                    <span class="timeline-tool">AI(Adobe Illustrator)</span>
+                                </div>
+                                <div class="timeline-description">
+                                    <p>简单的文字设计，配合图形，既能满足标识，又美观大气</p>
+                                    <p>采用黄金分割比构建多个多边形和圆形，取不同比例不同部分构成美观的图形</p>
+                                    <p>简洁的配色和适当的阴影，模拟立体效果</p>
+                                </div>
+                                <div class="timeline-tags">
+                                    <span class="tag">logo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>ANIMATION 动态视觉视频作品</h3>
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2025-01</span>
+                                    <span class="timeline-tool">Blender</span>
+                                </div>
+                                <div class="timeline-tags">
+                                    <span class="tag">animation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>ANIMATION 动画作品</h3>
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2025-01</span>
+                                    <span class="timeline-tool">Blender</span>
+                                </div>
+                                <div class="timeline-tags">
+                                    <span class="tag">animation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- 设计服务内容 -->
+        <section id="services" class="page-content">
+            <h2>设计服务</h2>
+
+            <!-- 侧边栏 -->
+            <div class="services-container">
+                <div class="services-sidebar">
+                    <ul class="sidebar-links">
+                        <li><a href="#branding" class="sidebar-link active">品牌导向型网页设计</a></li>
+                        <li><a href="#ux-design" class="sidebar-link">UX全链路体验设计</a></li>
+                        <li><a href="#frontend" class="sidebar-link">前沿前端工程开发</a></li>
+                        <li><a href="#design-system" class="sidebar-link">企业级设计系统搭建</a></li>
+                    </ul>
+                </div>
+                <div class="services-content">
+                    <!-- 品牌导向型网页设计 -->
+                    <div id="branding" class="service-part">
+                        <h3>品牌导向型网页设计</h3>
+                        <p>从品牌基因出发，打造兼具视觉张力与商业逻辑的响应式网站，适配全终端设备，确保PC/平板/手机端一致的专业形象呈现。</p>
+                        <p>
+                            深入挖掘品牌的独特价值、视觉符号和情感诉求，将品牌理念融入网页设计的每一个细节，确保用户在浏览网站时能够直观感受到品牌的核心精神。
+                            通过色彩搭配、字体选择、图像布局等设计元素，营造强烈的视觉冲击力，同时以清晰的用户路径和信息架构引导用户行为，实现品牌传播与商业转化的双重目标。
+                            <br><br><span
+                                class="highlight">全终端适配：</span>采用响应式设计技术，确保网站在PC端、平板端和手机端均能提供一致的用户体验，避免因设备差异导致的品牌形象割裂。
+                            <br><br>从首页到内页，从导航栏到交互按钮，所有设计元素均遵循<span class="highlight">统一的设计规范</span>，打造一个高度专业、值得信赖的品牌网站。
+                        </p>
+                    </div>
+                    <!-- UX全链路体验设计 -->
+                    <div id="ux-design" class="service-part">
+                        <h3>UX全链路体验设计</h3>
+                        <p>基于用户行为数据分析，重构产品信息架构与交互路径，通过可用性测试持续优化，提升30%+用户留存率与转化效率。</p>
+                        <p>
+                            通过热图分析、用户访谈和行为追踪等手段，深入了解用户在网站上的操作习惯、停留时长和转化瓶颈，为优化设计提供数据支持。
+                            基于用户需求重新梳理产品分类、内容层级和导航逻辑，确保用户能够以最短路径找到所需信息，提升浏览效率。
+                            <br><br><span class="highlight">交互路径优化：</span>
+                            简化购物流程、表单填写步骤等关键交互环节，减少用户操作成本，同时通过微交互设计（如动效反馈、提示信息）提升用户体验的流畅性。
+                            <br><br><span class="highlight">可用性测试与迭代：</span>
+                            通过色彩搭配、字体选择、图像布局等设计元素，营造强烈的视觉冲击力，同时以清晰的用户路径和信息架构引导用户行为，实现品牌传播与商业转化的双重目标。
+                            定期进行A/B测试和用户测试，收集反馈并快速迭代，确保设计能够持续满足用户需求，最终实现用户留存率和转化效率的显著提升。
+                        </p>
+                    </div>
+                    <!-- 前沿前端工程开发 -->
+                    <div id="frontend" class="service-part">
+                        <h3>前沿前端工程开发</h3>
+                        <p>采用React/Vue3+TypeScript技术栈，结合WebGL/WebAssembly实现复杂交互场景，构建首屏加载小于1.5秒的高性能Web应用。</p>
+                        <p>
+                            使用<a target="_blank" class="service-link" href="https://zh-hans.react.dev/">React</a>或<a
+                                target="_blank" class="service-link" href="https://cn.vuejs.org/">Vue3</a>框架结合<a
+                                target="_blank" class="service-link"
+                                href="https://www.typescriptlang.org/">TypeScript</a>，确保代码的可维护性、扩展性和性能优化，为复杂交互场景提供稳定的技术支持。
+                            通过WebGL实现3D渲染、动态视觉效果，以及WebAssembly提升计算密集型任务的执行效率，为视图引擎、实时数据可视化等复杂场景提供流畅的用户体验。
+                            <br><br><span class="highlight">性能优化策略：</span>
+                            采用懒加载、代码分割、资源压缩等技术手段，确保网站首屏加载时间控制在1.5秒以内，同时优化网络请求和渲染流程，降低卡顿和延迟。
+                            确保网站在不同浏览器、操作系统和设备上均能稳定运行，避免因技术问题导致的用户体验下降。
+                        </p>
+                    </div>
+                    <!-- 企业级设计系统搭建 -->
+                    <div id="design-system" class="service-part">
+                        <h3>企业级设计系统搭建</h3>
+                        <p>创建可复用的组件库与设计规范，确保跨平台、多终端的视觉统一性，降低50%+后续迭代成本</p>
+                        <p>
+                            制定详细的色彩、字体、间距、动效等设计规范，确保团队成员在不同项目中遵循一致的设计语言，避免视觉风格的混乱。
+                            通过模块化设计方法，构建一套可复用的UI组件库，涵盖按钮、表单、导航栏等基础组件，以及数据可视化、交互动效等高级组件，提升开发效率。
+                            <br><br>通过响应式设计和平台适配策略，确保设计系统在Web、移动端、桌面端等多终端上均能<span
+                                class="highlight">保持一致的视觉效果和交互体验</span>。
+                            通过组件复用和设计规范的标准化，减少重复开发和设计调整的成本，同时提升团队协作效率，最终实现50%以上的迭代<span class="highlight">成本降低</span>。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 页脚 -->
+            <footer class="main-footer">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Lovawitch's Studio</h4>
+                        <p>将创意转化为数字体验</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>联系我</h4>
+                        <p>Email: contact@ 3037665528@qq.com</p>
+                        <p>WeChat: lovawitch</p>
+                    </div>
+                    <div class="footer-social">
+                        <a target="_blank" href="https://github.com/Lavawitch" class="social-icon"><i
+                                class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://qm.qq.com/q/piXMKkLkoo" class="social-icon"><i
+                                class="fab fa-qq"></i></a>
+                        <a target="_blank" href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Lovawitch. All rights reserved.</p>
+                </div>
+            </footer>
+        </section>
+        <!-- 设计博客内容 -->
+        <section id="blog" class="page-content">
+            <h2>设计博客</h2>
+            <!-- Main content -->
+            <div class="container main-content">
+                <!-- Left column - Articles -->
+                <div class="articles-column">
+                    <!-- Author profile -->
+                    <div class="author-profile">
+                        <div>
+                            <img class="author-avatar" src="/imgs/1715732800895.jpg" alt="头像">
+                        </div>
+                        <div class="author-info">
+                            <h3>Lovawitch</h3>
+                            <p>Hi, my name is Lovawitch, I'm a Student here in China.</p>
+                            <div class="social-icons">
+                                <div class="social-icon">f</div>
+                                <div class="social-icon">t</div>
+                                <div class="social-icon">in</div>
+                                <div class="social-icon">ig</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Article 1 -->
+                    <article class="article-card">
+                        <img class="article-image" src="/imgs/wix-to-wordpress-01.png" alt="文章示例">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="article-category">BY </span>
+                                <span class="article-author">LOVAWITCHIN </span>
+                                <span class="article-category">IN </span>
+                                <span class="article-author">RESOURCE</span>
+                            </div>
+                            <h2 class="article-title">如何从 Wix 迁移到 WordPress (完整指南)</h2>
+                        </div>
+                    </article>
+                    <!-- Article 2 -->
+                    <article class="article-card">
+                        <img class="article-image" src="/imgs/wordpress_seo_definitive_guide_2400x1350.avif" alt="文章示例">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="article-category">BY </span>
+                                <span class="article-author">LOVAWITCHIN </span>
+                                <span class="article-category">IN </span>
+                                <span class="article-author">RESOURCE</span>
+                            </div>
+                            <h2 class="article-title">如何在WordPress上使用Yoast SEO (完整教程)</h2>
+                        </div>
+                    </article>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <div class="page-item arrow">❮</div>
+                        <div class="page-item">01</div>
+                        <div class="page-item active">02</div>
+                        <div class="page-item">03</div>
+                        <div class="page-item">...</div>
+                        <div class="page-item">15</div>
+                        <div class="page-item">16</div>
+                        <div class="page-item arrow">❯</div>
+                    </div>
+                </div>
+
+                <!-- Right column - Sidebar -->
+                <div class="sidebar">
+                    <!-- Search widget -->
+                    <div class="sidebar-widget search-widget">
+                        <input type="text" class="search-input" placeholder="Type something...">
+                        <button class="search-button">🔍</button>
+                    </div>
+
+                    <!-- Popular posts widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">POPULAR POST</h3>
+                        <div class="popular-posts">
+                            <div class="post-item">
+                                <div>
+                                    <img class="post-thumbnail" src="/imgs/thumb1.jpg" alt="">
+                                </div>
+                                <div class="post-info">
+                                    <h4 class="post-title">Our 15 favorite websites from August</h4>
+                                    <div class="post-category">DESIGN PROCESS</div>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div>
+                                    <img class="post-thumbnail" src="/imgs/thumb2.png" alt="">
+                                </div>
+                                <div class="post-info">
+                                    <h4 class="post-title">The beginners guide to user research</h4>
+                                    <div class="post-category">INSPIRATION</div>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div>
+                                    <img class="post-thumbnail" src="/imgs/thumb3.png" alt="">
+                                </div>
+                                <div class="post-info">
+                                    <h4 class="post-title">Website anatomy every designer needs to
+                                        learn</h4>
+                                    <div class="post-category">INSPIRATION</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent posts widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">RECENT POST</h3>
+                        <div class="recent-posts">
+                            <div class="post-item">
+                                <div class="post-info">
+                                    <h4 class="post-title">自八月以来我们最喜欢的15个网站</h4>
+                                    <div class="post-category">设计过程</div>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div class="post-info">
+                                    <h4 class="post-title">用户研究入门指南</h4>
+                                    <div class="post-category">灵感来源</div>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div class="post-info">
+                                    <h4 class="post-title">网页布局入门：每位设计师都需要了解的网站构造知识大全</h4>
+                                    <div class="post-category">灵感来源</div>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div class="post-info">
+                                    <h4 class="post-title">一个优质落地页所必备的 10 个部分</h4>
+                                    <div class="post-category">设计过程</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Subscribe widget -->
+                    <div class="sidebar-widget subscribe-widget">
+                        <h3 class="widget-title">SUBSCRIBE</h3>
+                        <input type="email" class="subscribe-input" placeholder="Your email">
+                        <button class="subscribe-button">Subscribe</button>
+                    </div>
+                    <!-- Social media widget -->
+                    <div class="sidebar-widget social-media-widget">
+                        <div class="social-icon">f</div>
+                        <div class="social-icon">p</div>
+                        <div class="social-icon">t</div>
+                        <div class="social-icon">in</div>
+                        <div class="social-icon">ig</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter section -->
+            <div class="container">
+                <div class="newsletter">
+                    <h2>Get free web design insights...</h2>
+                    <p>In your inbox, every other week. And unsubscribe in a click, if you want.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email">
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer>
+                <div class="container footer-container">
+                    <div class="footer-logo">Lovawitch</div>
+                    <div class="footer-social">
+                        <div class="social-icon">f</div>
+                        <div class="social-icon">t</div>
+                        <div class="social-icon">in</div>
+                        <div class="social-icon">ig</div>
+                        <div class="social-icon">p</div>
+                    </div>
+                    <div class="footer-copyright">All Rights Reserved 2025 Lovawitch</div>
+                </div>
+            </footer>
+        </section>
+        <!-- 联系我内容 -->
+        <section id="contact" class="page-content">
+            <h2>联系我</h2>
+            <div class="contact-form">
+                <h3>Contact me</h3>
+                <form id="contactForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>First name</label>
+                            <div class="input-group">
+                                <input type="text" id="firstName" placeholder="Jane" required>
+                                <input type="text" id="lastName" placeholder="Last name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input type="email" id="email" placeholder="email@janesfakedomain.net" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Your message</label>
+                            <textarea id="message" rows="4" placeholder="Enter your question or message"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="cta-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="smooth-switch-container">
+            <button class="smooth-switch-btn" data-target="home">
+                <span class="btn-text">首页</span>
+                <span class="btn-icon"><i class="fas fa-home"></i></span>
+            </button>
+            <button class="smooth-switch-btn" data-target="about">
+                <span class="btn-text">关于我</span>
+                <span class="btn-icon"><i class="fas fa-user"></i></span>
+            </button>
+            <button class="smooth-switch-btn" data-target="portfolio">
+                <span class="btn-text">作品集</span>
+                <span class="btn-icon"><i class="fas fa-images"></i></span>
+            </button>
+            <button class="smooth-switch-btn" data-target="services">
+                <span class="btn-text">设计服务</span>
+                <span class="btn-icon"><i class="fas fa-paint-brush"></i></span>
+            </button>
+            <button class="smooth-switch-btn" data-target="blog">
+                <span class="btn-text">设计博客</span>
+                <span class="btn-icon"><i class="fas fa-blog"></i></span>
+            </button>
+            <button class="smooth-switch-btn" data-target="contact">
+                <span class="btn-text">联系我</span>
+                <span class="btn-icon"><i class="fas fa-envelope"></i></span>
+            </button>
+            <button class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

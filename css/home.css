@@ -1,0 +1,220 @@
+/* 返回顶部按钮 */
+.back-to-top {
+  position: fixed;
+  bottom: -60px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.back-to-top.show {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 主页页脚 */
+.main-footer {
+  background: var(--card-bg);
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+.footer-section h4 {
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+.social-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 2rem;
+  color: var(--text-color);
+}
+/* end here */
+
+/* 头部区域 */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-bg);
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: var(--primary-color);
+  color: var(--bg-color);
+  text-decoration: none;
+  border-radius: 25px;
+  transition: transform 0.3s;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+/* 特性卡片 */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.feature-card {
+  padding: 2rem;
+  background: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--border-color);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* 图片展示区样式 */
+.image-showcase {
+  padding: 0 0 4rem 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.showcase-item {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  overflow: hidden;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.showcase-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 新增的landing模块样式 */
+.mainShow {
+  text-align: left;
+  padding: 4rem 0;
+}
+
+.mainShow-title {
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.mainShow-text {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.landing-button {
+  font-size: 1.1rem;
+  padding: 1.2rem 3rem;
+  box-shadow: 0 4px 15px rgba(35, 83, 242, 0.3);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .mainShow-title {
+    font-size: 2rem;
+  }
+  .mainShow-text {
+    font-size: 1rem;
+  }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .image-showcase {
+    padding: 2rem 1rem;
+  }
+
+  .showcase-item {
+    margin-bottom: 2rem;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* 移动端可添加菜单按钮 */
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

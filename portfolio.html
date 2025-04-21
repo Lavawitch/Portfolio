@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图标展示模板</title>
+    <script>
+        // 新增：二级页面路由系统
+        class PageRouter {
+            constructor() {
+                this.pageContainer = document.getElementById("page-container"); // 页面容器（需在HTML中定义）
+                this.init();
+            }
+
+            // 初始化路由
+            init() {
+                // 监听导航链接点击
+                document.querySelectorAll('[data-page]').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const pageId = link.dataset.page;
+                        this.navigateTo(pageId);
+                    });
+                });
+
+                // 监听浏览器历史记录变化
+                window.addEventListener('popstate', () => {
+                    this.loadPage(window.location.hash.replace('#', ''));
+                });
+
+                // 初始加载
+                const initialPage = window.location.hash.substring(1) || 'home';
+                this.loadPage(initialPage);
+            }
+
+            // 导航到指定页面
+            navigateTo(pageId) {
+                // 更新URL（不刷新页面）
+                history.pushState({ page: pageId }, '', `#${pageId}`);
+
+                // 加载页面内容
+                this.loadPage(pageId);
+            }
+
+            // 加载页面内容
+            async loadPage(pageId) {
+                // 隐藏所有页面
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+
+                // 显示目标页面
+                const targetPage = document.getElementById(pageId);
+                if (targetPage) {
+                    targetPage.classList.add('active');
+                } else {
+                    // 动态加载内容（示例）
+                    await this.fetchPageContent(pageId);
+                }
+
+                // 滚动到顶部
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                // 更新导航状态
+                this.updateNavState(pageId);
+            }
+
+            // 更新导航激活状态
+            updateNavState(pageId) {
+                document.querySelectorAll('[data-page]').forEach(link => {
+                    link.classList.toggle('active', link.dataset.page === pageId);
+                });
+            }
+
+            // 动态加载页面内容（可选）
+            async fetchPageContent(pageId) {
+                try {
+                    const response = await fetch(`/pages/${pageId}.html`);
+                    const html = await response.text();
+
+                    // 创建新页面容器
+                    const newPage = document.createElement('div');
+                    newPage.id = pageId;
+                    newPage.className = 'page active';
+                    newPage.innerHTML = html;
+
+                    this.pageContainer.appendChild(newPage);
+                } catch (error) {
+                    console.error('Failed to load page:', error);
+                    // 回退到默认页面
+                    this.loadPage('404');
+                }
+            }
+        }
+
+        // 初始化路由（在DOM加载后）
+        document.addEventListener('DOMContentLoaded', () => {
+            new PageRouter();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 导航菜单 -->
+    <nav>
+        <a href="#home" data-page="home" class="nav-link">Home</a>
+        <a href="#page1" data-page="page1" class="nav-link">Page 1</a>
+        <a href="#page2" data-page="page2" class="nav-link">Page 2</a>
+    </nav>
+
+    <!-- 页面容器 -->
+    <div id="page-container">
+        <div id="home" class="page active">
+            <h1>HI this is home page</h1>
+            <!-- 首页内容 -->
+        </div>
+
+        <div id="page1" class="page">
+            <h1>HI this is page1</h1>
+            <!-- 页面1内容 -->
+        </div>
+
+        <div id="page2" class="page">
+            <h1>HI this is page2</h1>
+            <!-- 页面2内容 -->
+        </div>
+    </div>
+</body>
+
+</html>
