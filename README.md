@@ -1,0 +1,1 @@
+This is a simple interactive webpage I made during my initial learning of Web front-end design and development. The theme is a personal portfolio website. I added some interesting animations and designs. It's suitable for beginners. I hope you can learn from it and experience the joy of design!
